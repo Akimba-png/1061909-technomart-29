@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Олег Акимов](https://up.htmlacademy.ru/htmlcss/29/user/1061909).
-* Наставник: <a href="https://htmlacademy.ru/profile/dima">Дмитрий Гуляев</a>
+* Наставник: <a href="https://htmlacademy.ru/profile/dima">Дмитрий Гуляев</a>.
 
 ---
 
