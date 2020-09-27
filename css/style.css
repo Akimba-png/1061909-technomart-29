@@ -1,0 +1,425 @@
+/* Variables */
+:root {
+  --basic-red: #EE3643;
+  --basic-white: #FFFFFF;
+  --basic-black: #000000;
+  --basic-navy: #32425C;
+  --basic-dark-navy: #293449;
+  --basic-green: #63A63E;
+  --basic-gray: #C5C5C5;
+  --basic-background: #F1F5F7;
+  --basic-extra-light-gray: #F3F7F9;
+
+  --extra-rare-yellow: #FFDA96;
+  --extra-rare-red: #FF5357;
+  --transparent-background: rgba(0, 0, 0, 0.0001); /*Маска, нужна ли*/
+
+  /* features colors */
+  --slider-header-transparent: rgba(0, 0, 0, 0.25);
+  --features-blue: #3BBCE3;
+  --features-green: #8ED78F;
+  --features-purple: #DC91D8;
+  --features-yellow: #FFBF47;
+  --features-dull-yellow: #FFC047;
+
+  /*transparent colors*/
+  --basic-gray-transparent: rgba(197, 197, 197, 0.3);
+  --special-gray-transparent: rgba(169, 169, 169, 0.3);
+
+  /* special colors */
+  --icone-phone-color: #B7BFC8;
+  --border-item-color: #EAEAEA;
+  --social-color: #212A3A;
+  --bread-crumbs-gray: #C1C6CE;
+  --section-header-color: #F9F5F0; /*изменить название?*/
+  --catalog-header-color: #F2F6F8;
+  --pagination-gray: #E5E5E5;
+
+  /* catalog's filter colors */
+  --filter-gray: #ABABAB;
+  --filter-light-gray: #D7DCDE;
+  --filter-dark-gray: #444444;
+  --fiter-background-color: #F7F3EC;
+
+  --footer-yellow: #FFD180;
+
+  /* interactive colors */
+  --special-gray: #A9A9A9;
+  --special-dark-navy: #161D29;
+  --special-navy-click: #1D2739;
+  --special-green-click: #518534;
+  --special-red-click: #BA2732;
+  --special-red-hover: #CA2C37;
+  --special-green-hover: #5FBB2D;
+  --special-input-gray: #B5B5B5;
+  --transparent-white: rgba(255, 255, 255, 0.5);
+}
+
+.page-body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: var(--basic-white);
+}
+
+[href] {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+[class*="list"] {
+  list-style: none;
+}
+
+.button {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+  border: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* header */
+.main-header {
+  background-color: var(--basic-background);
+}
+
+.main-header-top {
+  background-color: var(--basic-dark-navy);
+}
+
+.main-header-logo {
+  background-color: var(--basic-red);
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.main-header-order {
+  background-color: var(--basic-green);
+}
+
+.main-header-title {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+}
+
+.main-header-phone {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red);
+}
+
+.main-header-contacts p {
+  font-size: 14px;
+  color: var(--basic-navy);
+}
+
+.main-header-login,
+.main-header-registry {
+  font-size: 21px;
+  line-height: 21px;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.main-navigation {
+  background-color: var(--basic-navy);
+}
+
+/*features*/
+.features-item p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.features-item a {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.materials {
+  background-color: var(--features-yellow);
+}
+
+.tools {
+  background-color: var(--features-blue);
+}
+
+.tech {
+  background-color: var(--features-purple);
+}
+
+.discounts {
+  background-color: var(--features-green);
+}
+
+.delivery {
+  background-color: var(--features-dull-yellow);
+}
+
+/*features slider*/
+.features-slider {
+  background-color: var(--basic-gray);
+}
+
+.features-slider-item h3 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+/*promo*/
+.section-header {
+  background-color: var(--section-header-color);
+}
+
+.section-header h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-navy);
+}
+
+.promo-item {
+  font-family: "PT sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  border: 1px solid var(--border-item-color);
+}
+
+.promo-item img {
+  background-color: var(--basic-gray);
+}
+
+.promo-item h3 {
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--basic-black);
+}
+
+.old-price {
+  color: var(--special-gray);
+  text-decoration-line: line-through;
+}
+
+.button-promo {
+  font-family: "PT sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+/*brands*/
+.brand-item img {
+  background-color: var(--basic-gray);
+}
+
+/*services*/
+.services {
+  background-color: var(--basic-background);
+}
+
+.services h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.services h3 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-navy);
+}
+
+.services p {
+  font-family: "PT sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+.button-services {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  border: none;
+  background-color: var(--basic-navy);
+  color: var(--basic-white);
+  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+}
+
+/*about*/
+.about h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.about p {
+  font-family: "PT sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+.partner-item {
+  color: var(--basic-black);
+}
+
+.map {
+  background-color: var(--basic-gray);
+}
+
+/*footer*/
+.footer-top {
+  background-color: var(--basic-navy);
+  color: var(--basic-background);
+}
+
+.footer-logo {
+  background-color: var(--basic-red);
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.footer-center {
+  background-color: var(--basic-navy);
+  color: var(--basic-extra-light-gray);
+}
+
+.footer-features-item {
+  color: var(--footer-yellow);
+}
+
+.extra {
+  color: var(--extra-rare-yellow);
+}
+
+.footer-bottom {
+  background-color: var(--basic-dark-navy);
+  font-size: 16px;
+  line-height: 18px;
+}
+.footer-social-item {
+  background-color: var(--social-color);
+}
+
+.footer-link {
+  color: var(--footer-yellow);
+}
+
+
+
+/*interactive*/
+/*interactive-header*/
+.main-header-order:hover {
+  background-color: var(--special-green-hover);
+}
+
+.main-header-logo:active {
+  background-color: var(--special-red-click);
+}
+
+.main-header-bookmarks:active,
+.main-header-cart:active {
+  background-color: var(--special-dark-navy);
+  color: var(--transparent-white);
+}
+
+.main-header-order:active {
+  color: var(--transparent-white);
+}
+
+.main-header-login:hover,
+.main-header-registry:hover {
+  color: var(--basic-red);
+}
+
+.main-header-login:active,
+.main-header-registry:active {
+  color: var(--basic-gray);
+}
+
+.company-link:hover {
+  background-color: var(--basic-dark-navy);
+}
+
+.company-link:active {
+  background-color: var(--special-navy-click);
+}
+
+/*interactive-features*/
+.features-item a:hover {
+  background-color: var(--basic-gray-transparent);
+}
+
+.features-item a:active {
+  background-color: var(--special-gray-transparent);
+}
+
+.button-catalog:hover {
+  background-color: var(--special-red-hover);
+}
+
+.button-catalog:active {
+  background-color: var(--special-red-click);
+}
+
+/*interactive-brand*/
+.brand-item img:hover {
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
+
+.brand-item img:active {
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  opacity: 0.5;
+}
+
+/*interactive service*/
+.button-services:hover {
+  background-color: var(--basic-dark-navy);
+}
+
+.button-services:focus {
+  color: var(--basic-navy);
+  background-color: var(--basic-white);
+  box-shadow: none;
+  outline: none;
+}
+
+/*interactive footer*/
+.footer-social-item:hover,
+.footer-social-item:active {
+  background-color: var(--basic-red);
+}
+
+.footer-link:active {
+  color: var(--basic-red);
+}
