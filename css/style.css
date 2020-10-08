@@ -334,7 +334,7 @@
   font-size: 16px;
   line-height: 18px;
 }
-.footer-social-item {
+.footer-social-item a {
   background-color: var(--social-color);
 }
 
@@ -422,9 +422,23 @@
 }
 
 /*interactive footer*/
-.footer-social-item:hover,
-.footer-social-item:active {
+.footer-navigation-item a:hover,
+.footer-features-item a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation-item a:active,
+.footer-features-item a:active {
+  opacity: 0.5;
+}
+
+.footer-social-item a:hover,
+.footer-social-item a:active {
   background-color: var(--basic-red);
+}
+
+.footer-link:hover {
+  text-decoration: underline;
 }
 
 .footer-link:active {
@@ -472,16 +486,47 @@
 }
 
 
+/*Pagination*/
+.pagination-item a,
+.pagination-button {
+  font-family: "PT sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border: 1px solid var(--pagination-gray);
+  border-radius: 2px;
+}
 
 
+.pagination-current-page a {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
 
+.about-product {
+  background-color: var(--basic-background);
+  color: var(--basic-black);
+}
+
+.about-product-header {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.about-product p {
+  font-family: "PT sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
 
 
 
 
 
 /*inner-page interactive*/
-
 .main-header-logged-item:hover {
   color: var(--basic-red);
 }
@@ -491,6 +536,17 @@
 }
 .main-header-logged-item:active {
   color: var(--basic-gray);
+}
+
+.pagination-item a:hover,
+.pagination-button:hover
+ {
+  border-color: var(--basic-gray);
+}
+
+.pagination-item a:active,
+.pagination-button:active {
+  border-color: var(--basic-red);
 }
 
 /*modal*/
@@ -517,6 +573,21 @@
 }
 
 .assortment-list .promo-item:hover {
-  border: 1px solid red;
-  filter: drop-shadow(0px 4px 20px var(--transparent-black));
+  box-shadow: 0px 4px 20px var(--transparent-black);
+}
+
+.assortment-button-buy:hover {
+  background-color: var(--special-green-hover);
+}
+
+.assortment-button-buy:active {
+  background-color: var(--special-green-click);
+}
+
+.assortment-button-bookmark:hover {
+  border-color: var(--basic-navy);
+}
+
+.assortment-button-bookmark:active {
+  opacity: 0.5;
 }
