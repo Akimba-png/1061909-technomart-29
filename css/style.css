@@ -36,6 +36,7 @@
   --section-header-color: #F9F5F0; /*изменить название?*/
   --catalog-header-color: #F2F6F8;
   --pagination-gray: #E5E5E5;
+  --logo-shadow-color: #b52933;
   --shadow-color: rgba(0, 0, 0, 0.24);
   --special-dark-green: #367315;
 
@@ -137,14 +138,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-
 }
 
 .main-header-logo {
-  position: absolute;
-  padding: 12px 56px 10px;
+  padding: 12px 56px 5px;
   background-color: var(--basic-red);
-  box-shadow: inset 0px -5px 0px var(--shadow-color);
+  box-shadow: 0 5px 0 0 var(--logo-shadow-color);
 }
 
 .header-form {
