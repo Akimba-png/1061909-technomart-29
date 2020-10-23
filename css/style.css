@@ -88,8 +88,10 @@
   list-style: none;
 }
 
-.hidden {
-  display: none;
+.label-new {
+  background-image: url("../img/label-new.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
 .button {
@@ -103,12 +105,21 @@
   border: none;
 }
 
+.hidden {
+  display: none;
+}
+
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*grid*/
@@ -395,15 +406,6 @@
   background-image: url("../img/icon-materials.svg");
 }
 
-.label-new {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 70px;
-  height: 70px;
-  background-image: url("../img/label-new.svg");
-}
-
 .tools {
   background-color: var(--features-blue);
 }
@@ -539,7 +541,7 @@
 
 .slider-control {
   border: none;
-  outline: none;
+  /* outline: none; */
   background-color: transparent;
   cursor: pointer;
 }
@@ -565,31 +567,34 @@
 
 .current-list {
   position: absolute;
-  top: 214px;
-  left: 255px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  top: 220px;
+  left: 294px;
 }
 
 .current-item {
-  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  padding: 0;
   width: 10px;
   height: 10px;
-  margin-right: 5px;
+  border: none;
   border-radius: 50%;
   background-color: var(--basic-white);
+  cursor: pointer;
 }
 
-.current-list div {
+.curren-slide::before {
+  content: "";
+  display: block;
   width: 6px;
   height: 6px;
   margin: 2px auto;
   border-radius: 50%;
   background-color: var(--basic-red);
 }
-
-
-
-
-
 
 /*promo, brands layout*/
 .section-header {
