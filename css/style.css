@@ -107,6 +107,10 @@
   cursor: pointer;
 }
 
+.cart-full {
+  background-color: var(--basic-red);
+}
+
 .hidden {
   display: none;
 }
@@ -142,6 +146,7 @@
 }
 
 /* header */
+/* main header top */
 .main-header {
   margin-bottom: 59px;
   background-color: var(--basic-background);
@@ -189,59 +194,95 @@
   opacity: 0.3;
 }
 
-.order-navigation {
-  display: flex;
-  flex-wrap: wrap;
-  width: 450px;
-  min-height: 42px;
-  justify-content: flex-end;
-  align-items: flex-start;
-  margin-left: auto;
-}
-
 .order-link {
-  position: relative;
-  padding: 9px 0;
   width: 150px;
+  min-height: 42px;
   box-sizing: border-box;
-
+  padding-top: 9px;
+  text-align: center;
 }
 
-.main-header-bookmarks {
-  padding-left: 43px;
+.main-header-bookmarks,
+.main-header-cart {
+  position: relative;
+  padding-left: 20px;
 }
 
 .main-header-bookmarks::before {
   content: "";
   position: absolute;
-  width: 14px;
-  height: 16px;
   top: 13px;
   left: 20px;
+  width: 14px;
+  height: 16px;
   background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   opacity: 0.3;
-}
-
-.main-header-cart {
-  padding-left: 49px;
 }
 
 .main-header-cart::before {
   content: "";
   position: absolute;
-  width: 15px;
-  height: 15px;
   top: 13px;
   left: 26px;
+  width: 15px;
+  height: 15px;
   background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   opacity: 0.3;
 }
 
+
+/* main header top interactive */
+.main-header-logo:active {
+  background-color: var(--special-red-click);
+  box-shadow: 0 5px 0 0 var(--special-dark-red);
+}
+
+.search-field:hover .search-image {
+  opacity: 1;
+}
+
+.search-field:focus-within {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.search-field:focus-within .search-image {
+  opacity: 1;
+}
+
+.search-field:focus-within path {
+  fill: var(--basic-red);
+}
+
 .main-header-order {
-  padding-left: 18px;
   background-color: var(--basic-green);
 }
 
+.main-header-order:hover {
+  background-color: var(--special-green-hover);
+}
+
+.main-header-bookmarks:active,
+.main-header-cart:active {
+  background-color: var(--special-dark-navy);
+  opacity: 0.3;
+}
+
+.main-header-bookmarks:hover::before,
+.main-header-cart:hover::before {
+  opacity: 1;
+}
+
+.main-header-order:active {
+  color: var(--transparent-white);
+}
+
+
+/* main header center */
 .main-header-center {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -296,7 +337,70 @@
   margin: 3px 0 0 12px;
 }
 
-.autorisation-block {
+
+/* unregistered user navigation */
+.unregistered-user-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  margin-left: auto;
+  padding-top: 46px;
+  width: 281px;
+}
+
+.registery-button {
+  box-sizing: border-box;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  min-height: 45px;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.main-header-login {
+  position: relative;
+  padding-left: 45px;
+  padding-right: 27px;
+}
+
+.icon-login {
+  position: absolute;
+  top: 14px;
+  left: 19px;
+}
+
+.main-header-registry {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+
+/* unregistered user navigation interactive */
+.main-header-login:hover,
+.main-header-registry:hover {
+  color: var(--basic-red);
+}
+
+.main-header-login:active,
+.main-header-registry:active {
+  color: var(--basic-gray);
+}
+
+.main-header-login:hover path {
+  fill: var(--special-dark-blue);
+}
+
+.main-header-login:active path {
+  fill: var(--basic-gray);
+}
+
+
+/* registered user navigation */
+.rigistered-user-navigation {
   margin-left: auto;
   padding-top: 46px;
 }
@@ -304,19 +408,18 @@
 .account-navigation {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 5px;
   width: 299px;
-  margin-bottom: 7px;
-  justify-content: space-around;
-  background-color: var(--basic-white);
-  color: var(--basic-black);
 }
 
-.account-navigation-link {
-  min-height: 45px;
-  padding-top: 12px;
-  box-sizing: border-box;
-  font-size: 21px;
-  line-height: 21px;
+.profile {
+  margin-right: 21px;
+  margin-left: 15px;
+}
+
+.user-name {
+  padding-left: 3px;
+  margin-right: 21px;
 }
 
 .account-menu {
@@ -348,50 +451,40 @@
   background-color: var(--basic-navy);
 }
 
-.user-navigation {
-  width: 281px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-left: auto;
+
+/* registered user navigation interactive */
+.user-name:active {
+  color: var(--basic-gray);
 }
 
-.main-header-login,
-.main-header-registry {
-  box-sizing: border-box;
-  min-height: 45px;
-  font-size: 21px;
-  line-height: 21px;
-  background-color: var(--basic-white);
-  color: var(--basic-black);
+.profile:hover path,
+.log-out:hover path {
+  fill: var(--special-dark-blue);
 }
 
-.main-header-login {
-  position: relative;
-  width: 121px;
-  padding-top: 11px;
-  padding-left: 45px;
+.profile:active path,
+.log-out:active path {
+  fill: var(--basic-gray);
 }
 
-.icon-login {
-  position: absolute;
-  width: 20px;
-  height: 17px;
-  left: 19px;
-  top: 14px;
+.account-menu-link:hover {
+  color: var(--basic-red);
 }
 
-.main-header-registry {
-  width: 150px;
-  text-align: center;
-  padding-top: 11px;
-}
-
-.main-header-cart-full {
+.personal-page:hover::before {
   background-color: var(--basic-red);
 }
 
+.account-menu-link:active {
+  color: var(--basic-gray);
+}
+
+.personal-page:active::before {
+  background-color: var(--basic-gray);
+}
+
+
+/* main navigation */
 .main-navigation-list {
   margin: 0;
   padding: 0;
@@ -410,8 +503,17 @@
 }
 
 
-/*features*/
+/* main navigatiomn interactive */
+.main-navigation-link:hover {
+  background-color: var(--basic-dark-navy);
+}
 
+.main-navigation-link:active {
+  background-color: var(--special-navy-click);
+}
+
+
+/*features*/
 .features-list {
   position: relative;
   min-height: 409px;
@@ -1189,75 +1291,6 @@
 
 
 
-/*interactive*/
-/*interactive-header*/
-.main-header-order:hover {
-  background-color: var(--special-green-hover);
-}
-
-.main-header-logo:active {
-  background-color: var(--special-red-click);
-  box-shadow: 0 5px 0 0 var(--special-dark-red);
-}
-
-.search-field:hover .search-image {
-  opacity: 1;
-}
-
-.search-field:focus-within {
-  color: var(--basic-black);
-  background-color: var(--basic-white);
-}
-
-.search-field:focus-within .search-image {
-  opacity: 1;
-}
-
-.search-field:focus-within path {
-  fill: var(--basic-red);
-}
-
-.main-header-bookmarks:active,
-.main-header-cart:active {
-  background-color: var(--special-dark-navy);
-  opacity: 0.3;
-}
-
-.main-header-bookmarks:hover::before,
-.main-header-cart:hover::before {
-  opacity: 1;
-}
-
-.main-header-order:active {
-  color: var(--transparent-white);
-}
-
-.main-header-login:hover,
-.main-header-registry:hover {
-  color: var(--basic-red);
-}
-
-.main-header-login:active,
-.main-header-registry:active {
-  color: var(--basic-gray);
-}
-
-.main-header-login:hover path {
-  fill: var(--special-dark-blue);
-}
-
-.main-header-login:active path {
-  fill: var(--basic-gray);
-}
-
-.main-navigation-link:hover {
-  background-color: var(--basic-dark-navy);
-}
-
-.main-navigation-link:active {
-  background-color: var(--special-navy-click);
-}
-
 /*interactive-features*/
 .slider-link:hover {
   background-color: var(--basic-gray-transparent);
@@ -1511,7 +1544,8 @@
   padding-left: 20px;
   min-height: 80px;
   box-sizing: border-box;
-  background-image: url("../img/bitmap.png");
+  background-color: var(--fiter-background-color);
+  border-radius: 3px;
 }
 
 .range-scale-empty {
@@ -1529,12 +1563,13 @@
 .range-switcher {
   position: absolute;
   top: 29px;
-  left: 20px;
+  left: 18px;
   width: 4px;
   height: 4px;
   background-color: var(--filter-gray);
   border: 8px solid var(--basic-white);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .range-swicher-max {
@@ -1764,10 +1799,12 @@
   width: 43px;
 }
 
-.sorting-control-button {
+.sorting-control-button  {
   border: none;
   padding: 0;
   color: var(--basic-gray);
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .button-up {
@@ -1874,38 +1911,6 @@
 
 
 /*inner-page interactive*/
-/* header */
-.user-name:active {
-  color: var(--basic-gray);
-}
-
-.autorised:hover path,
-.unautorised:hover path {
-  fill: var(--special-dark-blue);
-}
-
-.autorised:active path,
-.unautorised:active path {
-  fill: var(--basic-gray);
-}
-
-.account-menu-link:hover {
-  color: var(--basic-red);
-}
-
-.personal-page:hover::before {
-  background-color: var(--basic-red);
-}
-
-.account-menu-link:active {
-  color: var(--basic-gray);
-}
-
-.personal-page:active::before {
-  background-color: var(--basic-gray);
-}
-
-
 .pagination-item a:hover,
 .pagination-button:hover
  {
