@@ -19,7 +19,7 @@
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
           <label class="search-field" aria-label="поиск по странице">
             <input class="search-input" id="search" type="search" name="search" value="Поиск:">
-            <svg class="search-image" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="search-image" aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
                 fill="white" />
@@ -43,7 +43,7 @@
         <div class="account-navigation registery-button">
           <a class="profile" href="blank.html">
             <span class="visually-hidden">страница авторизации</span>
-            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" focusable="false" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M17.881 14.666C15.737 13.931 13.625 13 12.674 12.276C12.017 11.775 11.904 10.658 12.157 9.861C13.275 8.958 14.021 7.384 14.021 5.583C14.021 2.776 12.221 0.5 10 0.5C7.77902 0.5 5.97901 2.776 5.97901 5.583C5.97901 7.384 6.72501 8.957 7.84201 9.86C8.09501 10.658 7.98302 11.775 7.32502 12.276C6.37502 13 4.26201 13.93 2.11801 14.666C-0.0259852 15.402 1.48343e-05 18.5 1.48343e-05 18.5H20C20 18.5 20.025 15.401 17.881 14.666Z"
                 fill="#C5C5C5" />
@@ -55,7 +55,7 @@
           </a>
           <a class="log-out" href="blank.html">
             <span class="visually-hidden">страница деавторизации</span>
-            <svg class="log-out" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="log-out" aria-hidden="true" focusable="false" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M20 9L11.125 0.5V6.5H5.125V11.5H11.125V17.5L20 9Z" fill="#C5C5C5" />
               <path
                 d="M2.10591 14.452V3.548C2.12391 3.172 2.27691 2.491 3.11591 2.491H8.14291V0.5H3.11591C0.937914 0.5 0.111914 2.31 0.0869141 3.527V14.473C0.111914 15.689 0.937914 17.5 3.11591 17.5H8.14291V15.51H3.11591C2.27691 15.51 2.12391 14.827 2.10591 14.452Z"
@@ -84,7 +84,7 @@
   <main class="page-catalog">
     <div class="container layout-wrapper">
       <ul class="breadcrumbs-list">
-        <li class="breadcrumbs-item"><a href="index.html" aria-label="главная страница"></a></li>
+        <li class="breadcrumbs-item"><a href="index.html"><span class="visually-hidden">главная страница</span></a></li>
         <li class="breadcrumbs-item"><a href="blank.html">Каталог</a></li>
         <li class="breadcrumbs-item"><a href="blank.html">Инструмент</a></li>
         <li class="breadcrumbs-item"><a href="#" title="Мы здесь">Перфораторы</a></li>
@@ -100,22 +100,28 @@
                 <div class="range-scale-empty">
                   <div class="range-scale-current"></div>
                 </div>
-                <div class="range-switcher range-swicher-min" tabindex="0" aria-label="уменьшить нижний порог">
-                  <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3" d="M10 10C4.477 10 0 5.522 0 0V2C0 7.522 4.477 12 10 12C15.522 12 20 7.522 20 2V0C20 5.522 15.522 10 10 10Z" fill="#ABABAB"/>
+                <div class="range-switcher range-swicher-min" tabindex="0">
+                  <span class="visually-hidden">уменьшить нижний порог</span>
+                  <svg aria-hidden="true" focusable="false" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M10 10C4.477 10 0 5.522 0 0V2C0 7.522 4.477 12 10 12C15.522 12 20 7.522 20 2V0C20 5.522 15.522 10 10 10Z" fill="#ABABAB" />
                   </svg>
                 </div>
-                <div class="range-switcher range-swicher-max" tabindex="0" aria-label="увеличить верхний порог">
-                  <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3" d="M10 10C4.477 10 0 5.522 0 0V2C0 7.522 4.477 12 10 12C15.522 12 20 7.522 20 2V0C20 5.522 15.522 10 10 10Z" fill="#ABABAB"/>
+                <div class="range-switcher range-swicher-max" tabindex="0">
+                  <span class="visually-hidden">увеличить нижний порог</span>
+                  <svg aria-hidden="true" focusable="false" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M10 10C4.477 10 0 5.522 0 0V2C0 7.522 4.477 12 10 12C15.522 12 20 7.522 20 2V0C20 5.522 15.522 10 10 10Z" fill="#ABABAB" />
                   </svg>
                 </div>
               </div>
               <div class="range-input-wrapper">
                 <label class="min-price-label" for="min-price">
+                  <span class="visually-hidden">минимальная стоимость</span>
                   <input type="number" name="min-price" value="0" id="min-price">
                 </label>
-                <label class="max-price-label" for="max-price">&mdash;</label>
+                <label class="max-price-label" for="max-price">
+                  &mdash;
+                  <span class="visually-hidden">максимальная стоимость</span>
+                </label>
                 <input type="number" name="max-price" value="30000" id="max-price">
               </div>
             </div>
@@ -126,12 +132,12 @@
               <li class="filter-item">
                 <label class="company-switcher">
                   <input class="filter-input visually-hidden" type="checkbox" name="bosch" checked>
-                  <svg class="checkbox checkbox-off" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="checkbox checkbox-off" aria-hidden="true" focusable="false" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z"
                       fill="currentColor" />
                   </svg>
-                  <svg class="checkbox checkbox-on" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="checkbox checkbox-on" aria-hidden="true" focusable="false" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.28505 7.48598L4.45605 10.315L12.2391 18.098L26.1711 4.16598L23.3431 1.33698L12.2391 12.439L7.28505 7.48598Z" fill="currentColor" />
                     <path
                       d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z"
@@ -143,12 +149,12 @@
               <li class="filter-item">
                 <label class="company-switcher">
                   <input class="filter-input visually-hidden" type="checkbox" name="interscol">
-                  <svg class="checkbox checkbox-off" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="checkbox checkbox-off" aria-hidden="true" focusable="false" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z"
                       fill="currentColor" />
                   </svg>
-                  <svg class="checkbox checkbox-on" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="checkbox checkbox-on" aria-hidden="true" focusable="false" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.28505 7.48598L4.45605 10.315L12.2391 18.098L26.1711 4.16598L23.3431 1.33698L12.2391 12.439L7.28505 7.48598Z" fill="currentColor" />
                     <path
                       d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z"
@@ -160,12 +166,12 @@
               <li class="filter-item">
                 <label class="company-switcher">
                   <input class="filter-input visually-hidden" type="checkbox" name="makita" checked>
-                  <svg class="checkbox checkbox-off" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="checkbox checkbox-off" aria-hidden="true" focusable="false" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z"
                       fill="currentColor" />
                   </svg>
-                  <svg class="checkbox checkbox-on" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="checkbox checkbox-on" aria-hidden="true" focusable="false" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.28505 7.48598L4.45605 10.315L12.2391 18.098L26.1711 4.16598L23.3431 1.33698L12.2391 12.439L7.28505 7.48598Z" fill="currentColor" />
                     <path
                       d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z"
@@ -177,12 +183,12 @@
               <li class="filter-item">
                 <label class="company-switcher">
                   <input class="filter-input visually-hidden" type="checkbox" name="dewalt">
-                  <svg class="checkbox checkbox-off" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="checkbox checkbox-off" aria-hidden="true" focusable="false" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z"
                       fill="currentColor" />
                   </svg>
-                  <svg class="checkbox checkbox-on" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="checkbox checkbox-on" aria-hidden="true" focusable="false" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.28505 7.48598L4.45605 10.315L12.2391 18.098L26.1711 4.16598L23.3431 1.33698L12.2391 12.439L7.28505 7.48598Z" fill="currentColor" />
                     <path
                       d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z"
@@ -194,12 +200,12 @@
               <li class="filter-item">
                 <label class="company-switcher">
                   <input class="filter-input visually-hidden" type="checkbox" name="hitachi">
-                  <svg class="checkbox checkbox-off" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="checkbox checkbox-off" aria-hidden="true" focusable="false" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z"
                       fill="currentColor" />
                   </svg>
-                  <svg class="checkbox checkbox-on" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="checkbox checkbox-on" aria-hidden="true" focusable="false" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.28505 7.48598L4.45605 10.315L12.2391 18.098L26.1711 4.16598L23.3431 1.33698L12.2391 12.439L7.28505 7.48598Z" fill="currentColor" />
                     <path
                       d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z"
@@ -247,13 +253,13 @@
           <div class="sorting-control">
             <button class="sorting-control-button button-up" type="button">
               <span class="visually-hidden">сортировка по возрастанию</span>
-              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg aria-hidden="true" focusable="false" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 10L0 0H11" fill="currentColor" />
               </svg>
             </button>
             <button class="sorting-control-button button-down" type="button">
               <span class="visually-hidden">сортировка по убыванию</span>
-              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg aria-hidden="true" focusable="false" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 10L0 0H11" fill="currentColor" />
               </svg>
             </button>
@@ -419,6 +425,20 @@
       </div>
     </div>
   </footer>
+  <section class="modal modal-cart">
+    <h2>Товар добавлен в корзину!</h2>
+    <div class="modal-cart-layout">
+      <button class="button modal-cart-button complete-button" type="button">
+        Оформить заказ
+      </button>
+      <button class="button modal-cart-button continue-button" type="button">
+        Продолжить покупки
+      </button>
+    </div>
+    <button class="modal-close-button" type="button">
+      <span class="visually-hidden">закрыть корзину</span>
+    </button>
+  </section>
 </body>
 
 </html>
