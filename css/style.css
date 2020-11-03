@@ -1,67 +1,67 @@
 /* Variables */
 :root {
-  --basic-red: #EE3643;
-  --basic-white: #FFFFFF;
+  --basic-red: #ee3643;
+  --basic-white: #ffffff;
   --basic-black: #000000;
-  --basic-navy: #32425C;
+  --basic-navy: #32425c;
   --basic-dark-navy: #293449;
-  --basic-green: #63A63E;
+  --basic-green: #63a63e;
 
-  --basic-gray: #C5C5C5;
-  --basic-background: #F1F5F7;
-  --basic-extra-light-gray: #F3F7F9;
+  --basic-gray: #c5c5c5;
+  --basic-background: #f1f5f7;
+  --basic-extra-light-gray: #f3f7f9;
   --transparent-gray: rgba(255, 255, 255, 0.3);
   --transparent-black: rgba(0, 0, 0, 0.15);
-  --extra-rare-yellow: #FFDA96;
-  --extra-rare-red: #FF5357;
-  --transparent-background: rgba(0, 0, 0, 0.0001); /*Маска, нужна ли*/
+  --extra-rare-yellow: #ffda96;
+  --extra-rare-red: #ff5357;
+  --transparent-background: rgba(0, 0, 0, 0.0001);
 
   /* features colors */
   --slider-header-transparent: rgba(0, 0, 0, 0.25);
-  --features-blue: #3BBCE3;
-  --features-green: #8ED78F;
-  --features-purple: #DC91D8;
-  --features-yellow: #FFBF47;
-  --features-dull-yellow: #FFC047;
+  --features-blue: #3bbce3;
+  --features-green: #8ed78f;
+  --features-purple: #dc91d8;
+  --features-yellow: #ffbf47;
+  --features-dull-yellow: #ffc047;
 
   /*transparent colors*/
   --basic-gray-transparent: rgba(197, 197, 197, 0.3);
   --special-gray-transparent: rgba(169, 169, 169, 0.3);
 
   /* special colors */
-  --icone-phone-color: #B7BFC8;
-  --border-item-color: #EAEAEA;
-  --social-color: #212A3A;
-  --bread-crumbs-gray: #C1C6CE;
-  --section-header-color: #F9F5F0; /*изменить название?*/
-  --catalog-header-color: #F2F6F8;
-  --pagination-gray: #E5E5E5;
+  --icone-phone-color: #b7bfc8;
+  --border-item-color: #eaeaea;
+  --social-color: #212a3a;
+  --bread-crumbs-gray: #c1c6ce;
+  --section-header-color: #f9f5f0;
+  --catalog-header-color: #f2f6f8;
+  --pagination-gray: #e5e5e5;
   --logo-shadow-color: #b52933;
-  --modal-light-gray: #F4F4F4;
+  --modal-light-gray: #f4f4f4;
   --shadow-color: rgba(0, 0, 0, 0.24);
   --scale-current-color: #00ca74;
   --special-dark-green: #367315;
-  --special-dark-blue: #3D546F;
+  --special-dark-blue: #3d546f;
   --special-light-red: #ff5357;
 
   /* catalog's filter colors */
-  --filter-gray: #ABABAB;
-  --filter-light-gray: #D7DCDE;
+  --filter-gray: #ababab;
+  --filter-light-gray: #d7dcde;
   --filter-dark-gray: #444444;
-  --fiter-background-color: #F7F3EC;
+  --fiter-background-color: #f7f3ec;
 
-  --footer-yellow: #FFD180;
+  --footer-yellow: #ffd180;
 
   /* interactive colors */
-  --special-gray: #A9A9A9;
-  --special-dark-navy: #161D29;
-  --special-navy-click: #1D2739;
+  --special-gray: #a9a9a9;
+  --special-dark-navy: #161d29;
+  --special-navy-click: #1d2739;
   --special-green-click: #518534;
   --special-dark-red: #8d1e26;
-  --special-red-click: #BA2732;
-  --special-red-hover: #CA2C37;
-  --special-green-hover: #5FBB2D;
-  --special-input-gray: #B5B5B5;
+  --special-red-click: #ba2732;
+  --special-red-hover: #ca2c37;
+  --special-green-hover: #5fbb2d;
+  --special-input-gray: #b5b5b5;
   --transparent-white: rgba(255, 255, 255, 0.5);
 }
 
@@ -109,6 +109,10 @@
 }
 
 .cart-full {
+  background-color: var(--basic-red);
+}
+
+.bookmarks-full {
   background-color: var(--basic-red);
 }
 
@@ -886,8 +890,11 @@ registered user navigation interactive */
 
 .button-promo {
   position: relative;
+  box-sizing: border-box;
   width: 121px;
   margin-bottom: 19px;
+  padding-top: 9px;
+  padding-left: 3px;
   font-family: "PT sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
@@ -969,7 +976,7 @@ registered user navigation interactive */
 
 /* brands */
 .brands {
-  margin-bottom: 51px;
+  margin-bottom: 50px;
 }
 
 .brands .button {
@@ -2108,4 +2115,45 @@ registered user navigation interactive */
 .continue-button {
   color: var(--basic-black);
   background-color: var(--basic-white);
+}
+
+.modal-show {
+  display: block;
+  animation-name: floating;
+  animation-duration: 1s;
+}
+
+.modal-error {
+  animation-name: retry;
+  animation-duration: 0.2s;
+  animation-iteration-count: 3;
+  animation-timing-function: linear;
+
+
+
+}
+
+/* Animation */
+@keyframes floating {
+  from {
+    transform: translateY(2000px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes retry {
+  from {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-10px);
+  }
+  66% {
+    transform: translateX(10px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }

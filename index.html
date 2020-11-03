@@ -119,7 +119,7 @@
           <img src="img/promo_bfg9000.png" width="184" height="164" alt="Карточка товара BOSCH BFG 9000">
           <h3>Перфоратор <span class="uppercase">bosch bfg</span> 9000</h3>
           <p class="old-price">32500 Р.</p>
-          <button class="button button-promo" type="button">25500 Р.</button>
+          <a class="button button-promo" href="blank.html">25500 Р.</a>
           <div class="assortment-list-modal">
             <button class="button assortment-button-buy" type="button">Купить</button>
             <button class="button assortment-button-bookmark" type="button">В закладки</button>
@@ -129,7 +129,7 @@
           <img src="img/promo_bfg3000.png" width="127" height="112" alt="Карточка товара BOSCH BFG 3000">
           <h3>Перфоратор <span class="uppercase">bosch bfg</span> 3000</h3>
           <p class="old-price">22500 Р.</p>
-          <button class="button button-promo" type="button">15500 Р.</button>
+          <a class="button button-promo" href="blank.html">15500 Р.</a>
           <div class="assortment-list-modal">
             <button class="button assortment-button-buy" type="button">Купить</button>
             <button class="button assortment-button-bookmark" type="button">В закладки</button>
@@ -139,7 +139,7 @@
           <img src="img/promo_bfg6000.png" width="144" height="128" alt="Карточка товара BOSCH BFG 6000">
           <h3>Перфоратор <span class="uppercase">bosch bfg</span> 6000</h3>
           <p class="old-price">30500 Р.</p>
-          <button class="button button-promo" type="button">25500 Р.</button>
+          <a class="button button-promo" href="blank.html">25500 Р.</a>
           <div class="assortment-list-modal">
             <button class="button assortment-button-buy" type="button">Купить</button>
             <button class="button assortment-button-bookmark" type="button">В закладки</button>
@@ -149,7 +149,7 @@
           <img src="img/promo_bfg2000.png" width="127" height="112" alt="Карточка товара BOSCH BFG 2000">
           <h3>Перфоратор <span class="uppercase">bosch bfg</span> 2000</h3>
           <p class="old-price"></p>
-          <button class="button button-promo" type="button">12500 Р.</button>
+          <a class="button button-promo" href="blank.html">12500 Р.</a>
           <div class="assortment-list-modal">
             <button class="button assortment-button-buy" type="button">Купить</button>
             <button class="button assortment-button-bookmark" type="button">В закладки</button>
@@ -316,17 +316,18 @@
 
   <section class="modal modal-feedback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
-    <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
+    <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post" target="
+    ">
       <div class="modal-form-layout">
         <label for="login-input">Ваше имя:
-          <input type="text" name="login" placeholder="Имя Фамилия" id="login-input" autofocus>
+          <input class="feedback-input" type="text" name="login" placeholder="Имя Фамилия" id="login-input" autofocus>
         </label>
         <label for="email-input">Ваш e-mail:
-          <input type="email" name="email" placeholder="email@example.com" id="email-input">
+          <input class="feedback-email" type="email" name="email" placeholder="email@example.com" id="email-input">
         </label>
       </div>
       <label for="textarea">Текст письма:
-        <textarea name="comment" rows="3" cols="61" placeholder="В свободной форме" id="textarea"></textarea>
+        <textarea class="feedback-text" name="comment" rows="3" cols="61" placeholder="В свободной форме" id="textarea"></textarea>
       </label>
       <button class="button modal-feedback-button" type="submit" aria-label="отправить комментарий">Отправить</button>
     </form>
@@ -343,6 +344,9 @@
       <span class="visually-hidden">закрыть карту</span>
     </button>
   </section>
+
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>
