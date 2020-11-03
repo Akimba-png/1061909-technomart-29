@@ -108,11 +108,7 @@
   cursor: pointer;
 }
 
-.cart-full {
-  background-color: var(--basic-red);
-}
-
-.bookmarks-full {
+.order-link-full {
   background-color: var(--basic-red);
 }
 
@@ -670,10 +666,12 @@ registered user navigation interactive */
 }
 
 .item-perforator {
+  display: none;
   background-image: url("../img/item-perforator.jpg");
 }
 
 .item-drill {
+  display: none;
   background-image: url("../img/item-drill.jpg");
 }
 
@@ -756,7 +754,7 @@ registered user navigation interactive */
   cursor: pointer;
 }
 
-.curren-slide::before {
+.current-slide::before {
   content: "";
   display: block;
   width: 6px;
@@ -867,6 +865,7 @@ registered user navigation interactive */
   position: relative;
   background-color: var(--basic-gray);
   margin: auto;
+  box-shadow: inset 0 0 0 2px var(--basic-white);
   z-index: -1;
 }
 
@@ -1098,6 +1097,10 @@ registered user navigation interactive */
   margin-top: 28px;
 }
 
+.item-delivery {
+  display: none;
+}
+
 .item-delivery::before {
   content: "";
   position: absolute;
@@ -1108,6 +1111,10 @@ registered user navigation interactive */
   background-image: url("../img/item-delivery.png");
 }
 
+.item-guarantee {
+  display:none;
+}
+
 .item-guarantee::before {
   content: "";
   position: absolute;
@@ -1116,6 +1123,10 @@ registered user navigation interactive */
   width: 389px;
   height: 283px;
   background-image: url("../img/item-guarantee.png");
+}
+
+.item-credit {
+  display: none;
 }
 
 .item-credit::before {
@@ -1930,7 +1941,12 @@ registered user navigation interactive */
 
 /* modal pages */
 .modal {
-  position: relative;
+  position: fixed;
+  top: 150px;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  margin: auto;
   box-sizing: border-box;
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -1982,9 +1998,6 @@ registered user navigation interactive */
 /* Modal feedback */
 .modal-feedback {
   display: none;
-  position: fixed;
-  top: 300px;
-  left: 635px;
   width: 620px;
   min-height: 430px;
 }
@@ -2040,9 +2053,6 @@ registered user navigation interactive */
 /* modal map */
 .modal-map {
   display: none;
-  position: fixed;
-  top: 300px;
-  left: 473px;
   box-sizing: border-box;
   padding-top: 7px;
   padding-left: 2px;
@@ -2065,9 +2075,6 @@ registered user navigation interactive */
 /* modal cart */
 .modal-cart {
   display: none;
-  position: fixed;
-  top: 300px;
-  left: 658px;
   padding-top: 72px;
   width: 620px;
   min-height: 282px;
@@ -2128,10 +2135,12 @@ registered user navigation interactive */
   animation-duration: 0.2s;
   animation-iteration-count: 3;
   animation-timing-function: linear;
-
-
-
 }
+
+.slider-show {
+  display: block;
+}
+
 
 /* Animation */
 @keyframes floating {

@@ -10,7 +10,7 @@ for (let i = 0; i < buyButtons.length; i++) {
   buyButtons[i].addEventListener("click", function (evt) {
     evt.preventDefault();
     cartPopup.classList.add("modal-show");
-    cartIcon.classList.add("cart-full");
+    cartIcon.classList.add("order-link-full");
   });
 }
 
@@ -29,3 +29,14 @@ window.addEventListener("keydown", function (evt) {
     cartPopup.classList.remove("modal-show");
   }
 });
+
+
+// bookmark icon
+const bookmarkIcon = document.querySelector(".main-header-bookmarks");
+const bookmarkButtons = document.querySelectorAll(".assortment-button-bookmark");
+
+for (let i = 0; i < bookmarkButtons.length; i++) {
+  bookmarkButtons[i].addEventListener("click", function () {
+    bookmarkIcon.classList.add("order-link-full");
+  })
+}

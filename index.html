@@ -88,23 +88,25 @@
           <a class="slider-link" href="blank.html">Бесплатно</a>
         </li>
         <li class="features-item features-slider">
-          <div class="features-slider-item item-perforator">
-            <h3>Перфораторы</h3>
-            <p>Настоящие мужские игрушки</p>
-            <a class="button button-catalog" href="catalog.html">Открыть каталог</a>
-          </div>
-          <div class="features-slider-item item-drill hidden">
+
+          <div class="features-slider-item item-drill">
             <h3>Дрели</h3>
             <p>Соседям на радость!</p>
             <a class="button button-catalog" href="blank.html">Открыть каталог</a>
           </div>
+          <div class="features-slider-item item-perforator slider-show">
+            <h3>Перфораторы</h3>
+            <p>Настоящие мужские игрушки</p>
+            <a class="button button-catalog" href="catalog.html">Открыть каталог</a>
+          </div>
+
           <div class="slider-navigation">
             <button class="slider-control slider-control-back" type="button"><span class="visually-hidden">предыдущий слайд</span></button>
             <button class="slider-control slider-control-next" type="button"><span class="visually-hidden">следующий слайд</span></button>
           </div>
           <div class="current-list">
-            <button class="current-item" type="button"><span class="visually-hidden">слайд дрели</span></button>
-            <button class="current-item curren-slide" type="button"><span class="visually-hidden">слайд перфораторы</span></button>
+            <button class="current-item button-item-drill" type="button"><span class="visually-hidden">слайд дрели</span></button>
+            <button class="current-item button-item-perforator current-slide" type="button"><span class="visually-hidden">слайд перфораторы</span></button>
           </div>
         </li>
       </ul>
@@ -203,7 +205,7 @@
           <li><button class="button-services button-credit" type="button">Кредит</button></li>
         </ul>
         <ul class="sevices-slider-list">
-          <li class="sevices-slider-item item-delivery">
+          <li class="sevices-slider-item item-delivery slider-show">
             <h3>Доставка</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо <br>
@@ -212,7 +214,7 @@
               поднимая его на ваш этаж!
             </p>
           </li>
-          <li class="sevices-slider-item item-guarantee hidden">
+          <li class="sevices-slider-item item-guarantee">
             <h3>Гарантия</h3>
             <p>
               Если купленный у нас товар поломается или заискрит, <br>
@@ -222,7 +224,7 @@
               Дом уж восстановите как-нибудь сами.
             </p>
           </li>
-          <li class="sevices-slider-item item-credit hidden">
+          <li class="sevices-slider-item item-credit">
             <h3>Кредит</h3>
             <p>
               Залезть в долговую яму стало проще! <br>
@@ -342,6 +344,20 @@
       width="939" height="442" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" title="офис Техномарт по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></iframe>
     <button class="modal-close-button" type="button">
       <span class="visually-hidden">закрыть карту</span>
+    </button>
+  </section>
+  <section class="modal modal-cart">
+    <h2>Товар добавлен в корзину!</h2>
+    <div class="modal-cart-layout">
+      <button class="button modal-cart-button complete-button" type="button">
+        Оформить заказ
+      </button>
+      <button class="button modal-cart-button continue-button" type="button">
+        Продолжить покупки
+      </button>
+    </div>
+    <button class="modal-close-button" type="button">
+      <span class="visually-hidden">закрыть корзину</span>
     </button>
   </section>
 
