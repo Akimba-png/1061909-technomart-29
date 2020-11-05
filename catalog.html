@@ -6,7 +6,7 @@
   <title>HTML Academy: Техномарт</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body inner-page">
@@ -36,7 +36,7 @@
         Интернет-магазин  <br> строительных материалов <br> и инструментов для ремонта
       </h1>
       <div class="main-header-contacts">
-        <a class="main-header-phone" href="tel:+7(812)5550555">+7 (812) 555-05-55</a>
+        <a class="main-header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
       <div class="rigistered-user-navigation">
@@ -130,7 +130,7 @@
             <legend class="filters-legend">Производители:</legend>
             <ul class="filter-list">
               <li class="filter-item">
-                <label class="company-switcher">
+                <label class="company-switcher" aria-label="отметить bosch">
                   <input class="filter-input visually-hidden" type="checkbox" name="bosch" checked>
                   <svg class="checkbox checkbox-off" aria-hidden="true" focusable="false" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -147,7 +147,7 @@
                 </label>
               </li>
               <li class="filter-item">
-                <label class="company-switcher">
+                <label class="company-switcher" aria-label="отметить interscol">
                   <input class="filter-input visually-hidden" type="checkbox" name="interscol">
                   <svg class="checkbox checkbox-off" aria-hidden="true" focusable="false" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -164,7 +164,7 @@
                 </label>
               </li>
               <li class="filter-item">
-                <label class="company-switcher">
+                <label class="company-switcher" aria-label="отметить makita">
                   <input class="filter-input visually-hidden" type="checkbox" name="makita" checked>
                   <svg class="checkbox checkbox-off" aria-hidden="true" focusable="false" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -181,7 +181,7 @@
                 </label>
               </li>
               <li class="filter-item">
-                <label class="company-switcher">
+                <label class="company-switcher" aria-label="отметить dewalt">
                   <input class="filter-input visually-hidden" type="checkbox" name="dewalt">
                   <svg class="checkbox checkbox-off" aria-hidden="true" focusable="false" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -198,7 +198,7 @@
                 </label>
               </li>
               <li class="filter-item">
-                <label class="company-switcher">
+                <label class="company-switcher" aria-label="отметить hitachi">
                   <input class="filter-input visually-hidden" type="checkbox" name="hitachi">
                   <svg class="checkbox checkbox-off" aria-hidden="true" focusable="false" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -221,11 +221,11 @@
             <ul class="filter-list type-list">
               <li class="filter-item">
                 <input class="filter-input-radio visually-hidden" type="radio" name="power-type" value="battery" id="type-battery" checked>
-                <label class="type-switcher" for="type-battery">аккумуляторные</label>
+                <label class="type-switcher" for="type-battery" aria-label="отметить аккумуляторный тип">аккумуляторные</label>
               </li>
               <li class="filter-item">
                 <input class="filter-input-radio visually-hidden" type="radio" name="power-type" value="wired" id="type-wired">
-                <label class="type-switcher" for="type-wired">сетевые</label>
+                <label class="type-switcher" for="type-wired" aria-label="отметить сетевой тип">сетевые</label>
               </li>
             </ul>
           </fieldset>
@@ -239,15 +239,15 @@
           <ul class="sorting-list">
             <li class="sorting-item">
               <input class="sorting-input visually-hidden" type="radio" name="sort-by" value="price" id="price-sorting" checked>
-              <label for="price-sorting">По цене</label>
+              <label for="price-sorting" aria-label="сортировка по цене">По цене</label>
             </li>
             <li class="sorting-item">
               <input class="sorting-input visually-hidden" type="radio" name="sort-by" value="type" id="type-sorting">
-              <label for="type-sorting">По типу</label>
+              <label for="type-sorting" aria-label="сортировка по типу">По типу</label>
             </li>
             <li class="sorting-item">
               <input class="sorting-input visually-hidden" type="radio" name="sort-by" value="functions" id="type-functions">
-              <label for="type-functions">По функционалу</label>
+              <label for="type-functions" aria-label="сортировка по функционалу">По функционалу</label>
             </li>
           </ul>
           <div class="sorting-control">
@@ -267,17 +267,17 @@
         </form>
         <ul class="index-columns assortment-list">
           <li class="promo-item">
-            <img src="img/promo_bfg6000.png" width="144" height="128" alt="Карточка товара BOSCH BFG 6000">
+            <img src="img/promo_bfg6000.png" width="144" height="128" alt="Карточка товара bosch bfg 6000">
             <h3>Перфоратор <span class="uppercase">bosch bfg</span> 6000</h3>
             <p class="old-price">30500 Р.</p>
-            <a class="button button-promo" href="blank.html">25500 Р.</a>
+            <a class="button button-promo" href="blank.html" aria-label="ссылка на товар">25500 Р.</a>
             <div class="assortment-list-modal">
               <button class="button assortment-button-buy" type="button">Купить</button>
               <button class="button assortment-button-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="promo-item">
-            <img src="img/promo_bfg6000.png" width="144" height="128" alt="Карточка товара BOSCH BFG 6000">
+            <img src="img/promo_bfg6000.png" width="144" height="128" alt="Карточка товара bosch bfg 6000">
             <h3>Перфоратор <span class="uppercase">bosch bfg</span> 6000</h3>
             <p class="old-price">30500 Р.</p>
             <a class="button button-promo" href="blank.html">25500 Р.</a>
@@ -287,70 +287,70 @@
             </div>
           </li>
           <li class="promo-item label-new">
-            <img src="img/promo_bfg6000.png" width="144" height="128" alt="Карточка товара BOSCH BFG 6000">
+            <img src="img/promo_bfg6000.png" width="144" height="128" alt="Карточка товара bosch bfg 6000">
             <h3>Перфоратор <span class="uppercase">bosch bfg</span> 6000</h3>
             <p class="old-price">30500 Р.</p>
-            <a class="button button-promo" href="blank.html">25500 Р.</a>
+            <a class="button button-promo" href="blank.html" aria-label="ссылка на товар">25500 Р.</a>
             <div class="assortment-list-modal">
               <button class="button assortment-button-buy" type="button">Купить</button>
               <button class="button assortment-button-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="promo-item label-new">
-            <img src="img/promo_bfg3000.png" width="127" height="112" alt="Карточка товара BOSCH BFG 3000">
+            <img src="img/promo_bfg3000.png" width="127" height="112" alt="Карточка товара bosch bfg 3000">
             <h3>Перфоратор <span class="uppercase">bosch bfg</span> 3000</h3>
             <p class="old-price">22500 Р.</p>
-            <a class="button button-promo" href="blank.html">15500 Р.</a>
+            <a class="button button-promo" href="blank.html" aria-label="ссылка на товар">15500 Р.</a>
             <div class="assortment-list-modal">
               <button class="button assortment-button-buy" type="button">Купить</button>
               <button class="button assortment-button-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="promo-item">
-            <img src="img/promo_bfg6000.png" width="144" height="128" alt="Карточка товара BOSCH BFG 6000">
+            <img src="img/promo_bfg6000.png" width="144" height="128" alt="Карточка товара bosch bfg 6000">
             <h3>Перфоратор <span class="uppercase">bosch bfg</span> 6000</h3>
             <p class="old-price">30500 Р.</p>
-            <a class="button button-promo" href="blank.html">25500 Р.</a>
+            <a class="button button-promo" href="blank.html" aria-label="ссылка на товар">25500 Р.</a>
             <div class="assortment-list-modal">
               <button class="button assortment-button-buy" type="button">Купить</button>
               <button class="button assortment-button-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="promo-item label-new">
-            <img src="img/promo_bfg2000.png" width="127" height="112" alt="Карточка товара BOSCH BFG 2000">
+            <img src="img/promo_bfg2000.png" width="127" height="112" alt="Карточка товара bosch bfg 2000">
             <h3>Перфоратор <span class="uppercase">bosch bfg</span> 2000</h3>
             <p class="old-price"></p>
-            <a class="button button-promo" href="blank.html">12500 Р.</a>
+            <a class="button button-promo" href="blank.html" aria-label="ссылка на товар">12500 Р.</a>
             <div class="assortment-list-modal">
               <button class="button assortment-button-buy" type="button">Купить</button>
               <button class="button assortment-button-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="promo-item label-new">
-            <img src="img/promo_bfg3000.png" width="127" height="112" alt="Карточка товара BOSCH BFG 3000">
+            <img src="img/promo_bfg3000.png" width="127" height="112" alt="Карточка товара bosch bfg 3000">
             <h3>Перфоратор <span class="uppercase">bosch bfg</span> 3000</h3>
             <p class="old-price">22500 Р.</p>
-            <a class="button button-promo" href="blank.html">15500 Р.</a>
+            <a class="button button-promo" href="blank.html" aria-label="ссылка на товар">15500 Р.</a>
             <div class="assortment-list-modal">
               <button class="button assortment-button-buy" type="button">Купить</button>
               <button class="button assortment-button-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="promo-item">
-            <img src="img/promo_bfg6000.png" width="144" height="128" alt="Карточка товара BOSCH BFG 6000">
+            <img src="img/promo_bfg6000.png" width="144" height="128" alt="Карточка товара bosch bfg 6000">
             <h3>Перфоратор <span class="uppercase">bosch bfg</span> 6000</h3>
             <p class="old-price">30500 Р.</p>
-            <a class="button button-promo" href="blank.html">25500 Р.</a>
+            <a class="button button-promo" href="blank.html" aria-label="ссылка на товар">25500 Р.</a>
             <div class="assortment-list-modal">
               <button class="button assortment-button-buy" type="button">Купить</button>
               <button class="button assortment-button-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="promo-item label-new">
-            <img src="img/promo_bfg2000.png" width="127" height="112" alt="Карточка товара BOSCH BFG 2000">
+            <img src="img/promo_bfg2000.png" width="127" height="112" alt="Карточка товара bosch bfg 2000">
             <h3>Перфоратор <span class="uppercase">bosch bfg</span> 2000</h3>
             <p class="old-price"></p>
-            <a class="button button-promo" href="blank.html">12500 Р.</a>
+            <a class="button button-promo" href="blank.html" aria-label="ссылка на товар">12500 Р.</a>
             <div class="assortment-list-modal">
               <button class="button assortment-button-buy" type="button">Купить</button>
               <button class="button assortment-button-bookmark" type="button">В закладки</button>
@@ -360,8 +360,8 @@
       </section>
       <ul class="pagination-list">
         <li class="pagination-item pagination-current-page"><a title="Мы здесь">1</a></li>
-        <li class="pagination-item"><a href="blank.html">2</a></li>
-        <li class="pagination-item"><a href="blank.html">3</a></li>
+        <li class="pagination-item"><a href="blank.html" aria-label="ссылка на страницу">2</a></li>
+        <li class="pagination-item"><a href="blank.html" aria-label="ссылка на страницу">3</a></li>
         <li class="pagination-item"><button class="pagination-button" type="button">Следующая</button></li>
       </ul>
     </div>
@@ -378,11 +378,11 @@
   </main>
   <footer class="footer">
     <div class="footer-top container">
-      <a class="footer-logo" href="index.html">
+      <a class="footer-logo" href="index.html" aria-label="на главную">
         <img src="img/logo-technomart.svg" width="138" height="23" alt="Логотип Техномарт">
       </a>
       <ul class="footer-navigation-list">
-        <li class="footer-navigation-item"><a href="#top">Компания</a></li>
+        <li class="footer-navigation-item"><a href="index.html">Компания</a></li>
         <li class="footer-navigation-item"><a href="blank.html">Новости</a></li>
         <li class="footer-navigation-item"><a href="catalog.html">Каталог</a></li>
         <li class="footer-navigation-item"><a href="blank.html">Доставка</a></li>
@@ -439,7 +439,9 @@
       <span class="visually-hidden">закрыть корзину</span>
     </button>
   </section>
-  <script src="js/script.cat.js"></script>
+
+  <script src="js/script.cat.min.js"></script>
+
 </body>
 
 </html>
