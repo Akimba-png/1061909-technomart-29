@@ -189,6 +189,10 @@
     background-color: transparent;
   }
 
+  .search-input::-webkit-search-cancel-button {
+    appearance: none;
+  }
+
   .search-image {
     position: absolute;
     top: 12px;
@@ -208,6 +212,10 @@
   .main-header-cart {
     position: relative;
     padding-left: 20px;
+  }
+
+  .inner-page .main-header-cart {
+    padding-left: 29px;
   }
 
   .main-header-bookmarks::before {
@@ -1665,17 +1673,23 @@
     font-size: inherit;
   }
 
-  .range-input-wrapper input {
+  .range-input {
     width: 95px;
     min-height: 38px;
     box-sizing: border-box;
     padding: 0;
-    padding-left: 15px;
     border: none;
     border-radius: 3px;
     font-size: inherit;
     text-align: center;
     background-color: var(--fiter-background-color);
+    -moz-appearance: textfield;
+  }
+
+  .range-input::-webkit-outer-spin-button,
+  .range-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
   }
 
 
